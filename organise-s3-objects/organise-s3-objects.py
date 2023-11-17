@@ -8,7 +8,7 @@ def lambda_handler(event, context):
 
     s3_client = boto3.client('s3')
 
-    bucket_name = "ogati-organise-objects"
+    bucket_name = "craa-organise-objects"
 
     list_objects_response = s3_client.list_objects_v2(Bucket=bucket_name)
 
